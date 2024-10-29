@@ -164,7 +164,6 @@ class House {
 class Employee {
     String name;
     Department department;
-    List<Employee> employees = new ArrayList<>();
 
     public Employee(String name, Department department) {
         this.name = name;
