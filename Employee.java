@@ -1,0 +1,48 @@
+class Employee {
+    String name;
+    Department department;
+
+    public Employee(String name, Department department) {
+        this.name = name;
+        this.department = department;
+    }
+
+    static class Department {
+
+        String name;
+        Employee head;
+
+        public Department(String name) {
+            this.name = name;
+        }
+
+        public void setHead(Employee head) {
+            if (this.head != null) {
+                throw new IllegalArgumentException("У отдела " + this.name + " уже есть начальник.");
+            }
+            this.head = head;
+        }
+
+        public Employee getHead() {
+            return head;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String toString() {
+        if (this == department.getHead()) {
+            return name + " начальник отдела " + department.getName();
+        } else {
+            return name + " работает в отделе " + department.getName() + ", начальник которого " + department.getHead().getName();
+        }
+    }
+
+}
