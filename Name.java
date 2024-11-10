@@ -4,9 +4,9 @@ import static java.lang.System.out;
 
 class Name {
 
-    String lastName;
-    String firstName;
-    String patronymic;
+    private String lastName;
+    private String firstName;
+    private String patronymic;
 
     public Name(String firstName, String lastName, String patronymic) {
         this.lastName = lastName;
