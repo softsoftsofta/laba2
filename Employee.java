@@ -1,6 +1,6 @@
 class Employee {
-    String name;
-    Department department;
+    private String name;
+    private Department department;
 
     public Employee(String name, Department department) {
         this.name = name;
@@ -33,7 +33,7 @@ class Employee {
 
     }
 
-    public String getName() {
+    private String getName() {
         return name;
     }
 
