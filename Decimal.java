@@ -2,8 +2,8 @@ import static java.lang.System.out;
 
 class Decimal {
 
-    int numerator; //числитель
-    int denominator; //знаменатель
+    private int numerator; //числитель
+    private int denominator; //знаменатель
 
     public Decimal(int numerator, int denominator) {
         this.numerator = numerator;
