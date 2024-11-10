@@ -2,7 +2,7 @@ import static java.lang.System.out;
 
 class House {
 
-    int numberOfFloors;
+    private int numberOfFloors;
 
     public House(int numberOfFloors) {
         this.numberOfFloors = numberOfFloors;
